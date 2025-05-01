@@ -2,8 +2,6 @@
 
 import fs from "fs/promises";
 import path from "path";
-import Nav from "../nav";
-// import Image from "next/image";
 
 interface Book {
     title: string,
@@ -13,7 +11,7 @@ interface Book {
     finished: string,
 }
 
-export default async function BooksIndexPage() {
+export default async function BooksPage() {
 
     const dataFilePath = path.join(process.cwd(), "src", "data", "books.json");
     const fileContents = await fs.readFile(dataFilePath, 'utf-8');
@@ -25,10 +23,9 @@ export default async function BooksIndexPage() {
     const top5: Book[] = sortedByRating.slice(0, 5);
 
     return (
-        <div>
-            <Nav></Nav>
+        <div className="flex flex-row ml-6">
             <section>
-                <h3>current reads: </h3>
+                <h2><b>current reads: </b></h2>
                 <ul>
                     { 
                         inProgress.map((book, index) => (
@@ -42,7 +39,7 @@ export default async function BooksIndexPage() {
             </section>
             
             <section>
-                <h3>5 desert island books: </h3>
+                <h2><b>5 desert island books: </b></h2>
                 <ul>
                     { 
                         top5.map((book, index)=> (

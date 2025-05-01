@@ -9,7 +9,7 @@ function preload() {
 
 function setup() {
   // runs once when sketch.js is executed
-  createCanvas(800, 500);
+  createCanvas(600, 430);
   // inputText = createInput('drops');
 }
 
@@ -19,6 +19,7 @@ function updateTextPoints(message) {
    */
   
   fontSize = max(10, min(width-40, width/message.length*2));
+  // fontSize = max(6, min(width - 100, ( width / message.length ) * 1.2));
   
   let allPoints = font.textToPoints( // textToPoints returns array of points that look like: { x: 10, y: 20, alpha: 450 } alpha is path angle of the point 
     message, 
