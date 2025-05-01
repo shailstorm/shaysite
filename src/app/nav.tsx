@@ -34,7 +34,6 @@ export default function Nav() {
 
                 {/* <Link href="/books">books</Link> */}
 
-
                 <Footer />
 
             </div>      
