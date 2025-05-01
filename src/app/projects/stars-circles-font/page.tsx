@@ -6,9 +6,8 @@ export default function StarsCirclesFontPage() {
             <div style={{ textAlign: "center" }}>
                 {/* <h1> dyanamic font </h1> */}
                 <p> first p5.js thing~ </p>
-                <p> move your cursor around the canvas </p>
                 <iframe style={{ border: 0 }}
-                    title="stars and circles font"
+                    title="stars and circles"
                     src="/stars-circles-font/index.html"
                     width="600"
                     height="400"

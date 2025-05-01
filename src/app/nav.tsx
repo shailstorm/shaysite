@@ -2,11 +2,12 @@ import Link from "next/link";
 import Footer from './footer';
 
 
-interface NavProps {
-    className?: string;
-}
+// interface NavProps {
+//     className?: string;
+// }
 
-export default function Nav({ className = "" }: NavProps) {
+// export default function Nav({  }: NavProps) {
+export default function Nav() {
     return (
             <div className="flex-col flex text-lg ${className}">
                 

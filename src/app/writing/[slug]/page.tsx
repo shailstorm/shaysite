@@ -9,15 +9,13 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
 interface WritingsProps {
-    params: {
-        slug: string;
-    };
+    params: Promise<{ slug: string; }>;
 }
 
-export default async function WritingsPostPage({ params }: WritingsProps) {
+export default async function WritingsPostPage( { params }: WritingsProps ) {
 
     const { slug } = await params;
-    const filePath = path.join(process.cwd(), 'src', 'data', 'writings', `${slug}.mdx`)
+    const filePath = path.join(process.cwd(), 'src', 'data', 'writings', `${slug}.mdx`);
 
     const post = posts.find((p) => p.slug === slug);
 
@@ -25,12 +23,12 @@ export default async function WritingsPostPage({ params }: WritingsProps) {
 
     let content: string;
     try { content = await fs.readFile(filePath, 'utf-8'); }
-    catch ( error ) { content = "post not found...go dig elsewhere" }
+    catch ( err ) { console.error(err); content = "post not found :("; }
 
     return (
         <article>   
             <h2><b>{ title }</b></h2>
             <MDXRemote source={content} />
         </article>
-    )
+    );
 }
