@@ -1,0 +1,59 @@
+[
+
+    {
+        "title": "doodles of women",
+        "imagePath": "/art/women.png",
+        "date": "feb 26, 2025",
+        "description": "",
+        "display": true
+    }, 
+
+    {
+        "title": "heads",
+        "imagePath": "/art/heads.jpeg",
+        "date": "feb 19, 2025",
+        "description": "",
+        "display": true
+    }, 
+
+    {
+        "title": "space bugs",
+        "imagePath": "/art/space_bugs.jpeg",
+        "date": "feb 8, 2025",
+        "description": "",
+        "display": false
+    }, 
+
+    {
+        "title": "nuwa",
+        "imagePath": "/art/nuwa.jpeg",
+        "date": "dec 19, 2024",
+        "description": "",
+        "display": true
+    }, 
+
+
+    {
+        "title": "nya's cake",
+        "imagePath": "/art/cake.png",
+        "date": "jan 28, 2023",
+        "description": "",
+        "display": false
+    },
+
+    {
+        "title": "severed",
+        "imagePath": "/art/severed.jpg",
+        "date": "dec 30, 2022",
+        "description": "",
+        "display": true
+    },
+
+    {
+        "title": "sitting woman",
+        "imagePath": "/art/sitting_woman.jpeg",
+        "date": "feb 26, 2018",
+        "description": "",
+        "display": true
+    }
+]
