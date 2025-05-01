@@ -10,16 +10,16 @@ export default function ProjectsPage() {
                 <ul>
 
                 <li>
-                    <a href="https://github.com/shailstorm/scheme-interpreter" target="_blank" rel="noopener">lisp interpreter</a> - 2025
+                    <a href="https://github.com/shailstorm/scheme-interpreter" target="_blank" rel="noopener">lisp interpreter - 2025 ↱ </a>
                 </li>
 
                 <li>
-                    <a href="https://github.com/shailstorm/minesweeper" target="_blank" rel="noopener">minesweeper in 2-D and n-D</a> - 2024
+                    <Link href="projects/stars-circles-font">dynamic font - 2025 </Link>
                 </li>
-                    
+
                 <li>
-                    <Link href="projects/stars-circles-font" target="_blank">dynamic font</Link> - 2025
-                </li>
+                    <a href="https://github.com/shailstorm/minesweeper" target="_blank" rel="noopener"> n-D minesweeper - 2022 ↱ </a>
+                </li>                    
 
                 <li>
                     memory - 2024
