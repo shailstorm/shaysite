@@ -25,7 +25,7 @@ export default async function WritingsPostPage({ params }: WritingsProps) {
 
     let content: string;
     try { content = await fs.readFile(filePath, 'utf-8'); }
-    catch (error) { content = "post not found...go dig elsewhere" }
+    catch ( error ) { content = "post not found...go dig elsewhere" }
 
     return (
         <article>   

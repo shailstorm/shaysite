@@ -3,7 +3,7 @@ import Footer from './footer';
 
 
 interface NavProps {
-    className?: String;
+    className?: string;
 }
 
 export default function Nav({ className = "" }: NavProps) {

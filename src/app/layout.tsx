@@ -1,10 +1,8 @@
 // WRAPS EVERY ROUTE (global layout)
 import './globals.css'
-import Image from "next/image";
 import Link from "next/link";
 import Nav from "./nav";
 import { Inconsolata, Libre_Barcode_128_Text, DotGothic16 } from "next/font/google";
-import { dot } from 'node:test/reporters';
 
 const inconsolata = Inconsolata({
   subsets: ['latin'],
