@@ -19,7 +19,7 @@ export default function Home() {
           coding<br />
         </p>
 
-
+{/* 
         <p className="mt-16">
           <b>lately...</b> <br />
           <Link href="https://open.spotify.com/episode/41SFvyFC6jQVzFNlXpY7xp?si=25f6ea0a6f274436&nd=1&dlsi=ce7e7b9537154f7b"
@@ -29,8 +29,8 @@ export default function Home() {
           <Link href="/design"
             // target='_blank'
             className="text-gray-400 hover:underline-offset-4"
-          > design</Link>,
-        </p>
+          > design</Link>
+        </p> */}
 
     </div>
   );

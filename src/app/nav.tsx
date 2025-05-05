@@ -19,9 +19,9 @@ export default function Nav() {
                     <Link href="/projects">projects</Link>
                 </div>
 
-                <div className="mb-0.5">
+                {/* <div className="mb-0.5">
                     <Link href="/design">design</Link>
-                </div>
+                </div> */}
 
                 <div className="mb-0.5">
                     <Link href="/art">art</Link>

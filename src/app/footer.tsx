@@ -10,11 +10,11 @@ export default function Footer () {
                 <Image className="opacity-30" alt="github" src="/logos/github.svg" width={20} height={20} />
             </Link>
 
-            <Link
+            {/* <Link
                 href="https://twitter.com/nullspacing"
                 target="_blank">
                 <Image className="opacity-30" alt="twitter" src="/logos/twitter.svg" width={20} height={20} />
-            </Link>
+            </Link> */}
 
             <Link
                 href="https://linkedin.com/in/shayleexie"
