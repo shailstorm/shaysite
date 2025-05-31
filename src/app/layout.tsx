@@ -29,19 +29,19 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex-col">
-          <div className="flex flex-col p-20 mt-15 justify-between">
+          <div className="flex flex-col md:p-20 p-10 mt-15">
 
-            <div className={librabarcode.className + " flex justify-end text-4xl"}>
+            <div>
               <Link href={"/"} className={librabarcode.className + " flex justify-end text-4xl"}>shaylee xie</Link>
             </div>
 
-            <div className="flex flex-row">
+            <div className="flex md:gap-0 gap-3">
             
-              <div className={dotgothic.className + " flex flex-col w-48 mt-19 flex-shrink-0"}> {/* LEFT COL */}
+              <div className={dotgothic.className + " flex-initial mt-19 md:w-1/4 w-1/3"}>
                 <Nav/>
               </div>
               
-              <div className="flex flex-col"> {/* MIDDLE COL */}
+              <div className="flex flex-col">
                 <main className={inconsolata.className + " flex flex-col  mt-20"}>
                   {children}
                 </main>
