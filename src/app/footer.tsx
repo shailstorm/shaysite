@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Footer () {
+export default function Footer ({ className = "" }: { className?: string }) {
     return (
-        <footer className="flex flex-row space-x-2 mb-10 absolute bottom-0 ">
+        <footer className={`fixed bottom-2 right-6 flex flex-row space-x-2 mb-10 ${className}`}>
             <Link
                 href="https://github.com/shailstorm"
                 target="_blank">

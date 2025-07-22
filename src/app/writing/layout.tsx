@@ -5,7 +5,6 @@ export default function BlogLayout({ children, }: { children: React.ReactNode })
 {
     return (
         <section>
-            { /* maybe a subnav / header for all writings */}
             { children }
         </section>
     );

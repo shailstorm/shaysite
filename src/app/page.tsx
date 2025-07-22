@@ -1,43 +1,37 @@
 // LANDING PAGE "/"
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
 
         <p className="mb-4">
-          <b>hi, i’m shay</b> <br />
+          Hi, I'm Shay! <br />
         </p>
 
 
         <p className="mb-4">
-          i studied CS at Wellesley College and MIT. my favorite classes were <br />
-          Software Construction (6.102) at MIT, and <br />
-          Automata Theory (CS 235) at Wellesley, which I TA'ed for. <br />
+          I studied CS at <Link href="https://en.wikipedia.org/wiki/Wellesley_College" className="text-violet-400">Wellesley College</Link> and MIT, where I did undergraduate research work. My favorite classes were <Link href="https://web.mit.edu/6.102/www/sp25/" className="text-violet-400">Software Construction</Link> at MIT, Organic Chemistry at Wellesley, and <Link href="https://cs.wellesley.edu/~cs235/" className="text-violet-400">Automata Theory</Link> at Wellesley (which I TA'ed for). <br />
         </p>
 
         <p className="mb-4">
-          i'm artistically inclined; my favorite medium of creating is 2-D drawing, but i've also dabbled in sculpting and pixel art. <br />
+          I'm currently in Brooklyn, NY finishing up a batch at <Link href="recurse.com" className="text-violet-400">The Recurse Center</Link>.
+        </p>
+
+        <p className="mb-8">
+          In the fall, I'll be at UChicago studying for my Master's in CS <i>(unless you hire me!)</i>.
+        </p>
+
+        <hr className="border-t-1 border-dashed border-t-violet-300" />
+
+        <p className="mb-4 mt-8">
+          I'm artistically inclined; I love drawing, sculpting, and making pixel art. <br />
         </p>
 
         <p className="mb-4">
-          i am a curious cat and a pondering penguin, and i have lots of questions. <br />
-          <b>but most importantly, i hope to elevate your experiences!</b> <br />
+          Nothing is final -- I question relentlessly. <br />
+          Above all, <b> I hope to elevate your experiences!</b> <br />
         </p>
-
-
-{/* 
-        <p className="mt-16">
-          <b>lately...</b> <br />
-          <Link href="https://open.spotify.com/episode/41SFvyFC6jQVzFNlXpY7xp?si=25f6ea0a6f274436&nd=1&dlsi=ce7e7b9537154f7b"
-            target='_blank'
-            className="text-gray-400 hover:underline-offset-4"
-          >trying</Link> differently, playing with
-          <Link href="/design"
-            // target='_blank'
-            className="text-gray-400 hover:underline-offset-4"
-          > design</Link>
-        </p> */}
 
     </div>
   );

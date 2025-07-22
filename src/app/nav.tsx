@@ -9,33 +9,32 @@ import Footer from './footer';
 // export default function Nav({  }: NavProps) {
 export default function Nav() {
     return (
-            <div className="flex-col flex text-lg ${className}">
+            <div className="flex flex-row ${className}">
                 
-                <div className="mb-0.5">
-                    <Link href="/">about</Link>
+                <div className="m-1">
+                    <Link href="/">About</Link>
                 </div>
                 
-                <div className="mb-0.5">
-                    <Link href="/projects">coding</Link>
+                <div className="m-1">
+                    <Link href="/projects">Code</Link>
                 </div>
 
-                <div className="mb-0.5">
-                    <Link href="/design">design</Link>
+                <div className="m-1">
+                    <Link href="/design">Design</Link>
                 </div>
 
-                <div className="mb-0.5">
-                    <Link href="/art">art</Link>
+                <div className="m-1">
+                    <Link href="/art">Art</Link>
                 </div>
 
-                <div className="mb-0.5">
-                    <Link href="/writing">writing</Link>
+                <div className="m-1">
+                    <Link href="/writing">Writing</Link>
                 </div>
 
-                <div className="mb-0.5">
-                    <Link href="/books">books</Link>
-                </div>
+                {/* <div className="mb-1">
+                    <Link href="/books">Books</Link>
+                </div> */}
 
-                <Footer />
 
             </div>      
     );

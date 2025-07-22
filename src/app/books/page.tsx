@@ -1,6 +1,7 @@
 // INDEX PAGE FOR BOOK LIST
 
 import fs from "fs/promises";
+import { notFound } from "next/navigation";
 import path from "path";
 
 interface Book {
@@ -12,6 +13,9 @@ interface Book {
 }
 
 export default async function BooksPage() {
+    if (process.env.NODE_ENV === "production") {
+        notFound();
+    }
 
     const dataFilePath = path.join(process.cwd(), "src", "data", "books.json");
     const fileContents = await fs.readFile(dataFilePath, 'utf-8');
