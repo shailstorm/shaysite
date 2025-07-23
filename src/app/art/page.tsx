@@ -18,24 +18,23 @@ export default async function ArtPage() {
     const pieces: ArtPiece[] = JSON.parse(fileContents);
 
     return (
-        <div className="flex flex-row">
+        <div className="flex justify-center">
+            <div className="columns-1 sm:columns-2 gap-6 max-w-4xl space-y-2">
 
-            <div style={{ display: "grid", gap: "1rem"}}>
-                <h1 className="">
-                
-                </h1>
-                { pieces.map((piece, index) => ( 
-                    piece.display == true &&
-                    <article key={index} style={{paddingBottom: "8rem"}}>
-                        <Image
-                            src={piece.imagePath}
-                            alt={piece.title}
-                            style={{ maxWidth: "100%", height: "auto" }}
-                            width={500}
-                            height={500} />
-                        <span><p>{piece.date.split(" ").pop()}</p></span>
-                        <p>{piece.description}</p>
-                    </article>
+                { pieces
+                    .filter(piece => piece.display)
+                    .sort((a: ArtPiece, b: ArtPiece) => parseInt(b.date.split(" ")[2]) - parseInt(a.date.split(" ")[2]))
+                    .map((piece, index) => ( 
+                        <article key={index} className="break-inside-avoid pb-3">
+                            <Image
+                                src={piece.imagePath}
+                                alt={piece.title}
+                                style={{ maxWidth: "100%", height: "auto" }}
+                                width={300}
+                                height={300} />
+                            <span className="flex justify-center mt-0.5"><p>{piece.date.split(" ").pop()}</p></span>
+                            <p>{piece.description}</p>
+                        </article>
                     ))
                 }
             </div>

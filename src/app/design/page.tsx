@@ -3,13 +3,6 @@ export default function DesignPage() {
         <section className="flex flex-row ">
 
             <div className="flex flex-col">
-
-                <ul>
-
-                <li>
-                </li>
-
-                </ul>
                 
             </div>
         

@@ -9,7 +9,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div className="flex justify-center items-center">
       {children}
     </div>
   )

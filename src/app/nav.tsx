@@ -1,41 +1,34 @@
+"use client"; // needed to use hooks like usePathname
+
 import Link from "next/link";
-import Footer from './footer';
+import { usePathname } from "next/navigation";
 
+export default function Nav({className = ""}: {className?: string}) {
+  const pathname = usePathname();
 
-// interface NavProps {
-//     className?: string;
-// }
+  const links = [
+    { label: "About", href: "/" },
+    { label: "Projects", href: "/projects" },
+    { label: "Art", href: "/art" },
+    { label: "Writing", href: "/writing" },
+  ];
 
-// export default function Nav({  }: NavProps) {
-export default function Nav() {
-    return (
-            <div className="flex flex-row ${className}">
-                
-                <div className="m-1">
-                    <Link href="/">About</Link>
-                </div>
-                
-                <div className="m-1">
-                    <Link href="/projects">Code</Link>
-                </div>
-
-                <div className="m-1">
-                    <Link href="/design">Design</Link>
-                </div>
-
-                <div className="m-1">
-                    <Link href="/art">Art</Link>
-                </div>
-
-                <div className="m-1">
-                    <Link href="/writing">Writing</Link>
-                </div>
-
-                {/* <div className="mb-1">
-                    <Link href="/books">Books</Link>
-                </div> */}
-
-
-            </div>      
-    );
+  return (
+    <nav className={`flex flex-row space-x-3 ${className}`}>
+      {links.map(({ label, href }) => {
+        const isActive = ( pathname === href || pathname.startsWith(href + "/") );
+        return (
+          <Link
+            key={href}
+            href={href}
+            className={`transition ${
+              isActive ? "text-violet-300" : "text-gray-300"
+            }`}
+          >
+            {label}
+          </Link>
+        );
+      })}
+    </nav>
+  );
 }
