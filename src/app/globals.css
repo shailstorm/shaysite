@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
+@layer base {
+  a {
+    text-decoration-skip-ink: auto;
+    @apply decoration-gray-300 hover:decoration-gray-400 underline underline-offset-2;
+  }
+
+  a[href^="/"],
+  a[href*="shayleexie.com"] {
+    text-decoration: none;
+    @apply no-underline decoration-transparent hover:decoration-transparent;
+  }
+
+  p {
+    @apply  text-[#747b87] text-[14px] leading-relaxed;
+  }
+
+  h1 {
+    @apply text-gray-500 text-[14px] font-semibold;
+  }
+
+  article a[href^="/"],
+  article a[href*="shayleexie.com"] {
+    @apply underline decoration-gray-300 hover:decoration-gray-400;
+  }
+
+  article h1 {
+    @apply text-gray-500 text-[14px] font-bold mb-2;
+  }
+
+  article h2 {
+    @apply text-gray-400 text-[14px] mb-4;
+  }
+
+
+
+}
+
 :root {
   --background: #ffffff;
   --foreground: #000000;
@@ -107,4 +144,3 @@ body {
     transform: scale(1.4);
   }
 }
-

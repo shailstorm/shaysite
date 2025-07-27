@@ -6,7 +6,7 @@ export default function Footer ({ className = "" }: { className?: string }) {
     return (
         <div className="flex flex-col mt-auto self-end">
             
-            <footer className={`flex flex-row mt-auto mb-2 space-x-2 self-end ${className}`}>
+            <footer className={`flex flex-row mt-20 mb-2 space-x-2 self-end ${className}`}>
                 <Link
                     href="https://github.com/shailstorm"
                     target="_blank">

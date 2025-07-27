@@ -1,4 +1,5 @@
 "use client";
+import { lora } from "@/fonts";
 
 import { useState } from "react";
 import SparkleTrail from "@/utils/components/SparkleTrail";
@@ -19,9 +20,9 @@ export default function SparkleSwitcher() {
 
       <button
         onClick={() => setEnabled((prev) => !prev)}
-        className="self-end mb-5 text-xs text-violet-300 bg-transparent border-none cursor-pointer hover:text-pink-300 transition"
+        className={`self-end mb-8 text-xs text-violet-300 hover:text-[#ff96f6] transition italic ${lora.className}`}
       >
-        {enabled ? "deactivate magic" : "get magical"}
+        <i>{enabled ? "hide magic" : "get magical"}</i>
       </button>
     </>
   );

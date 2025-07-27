@@ -40,6 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-/src/data/books.json
-/src/data/art.json
 /src/app/book
+/src/data

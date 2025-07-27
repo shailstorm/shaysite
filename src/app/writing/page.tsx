@@ -2,21 +2,22 @@
 // INDEX PAGE FOR ALL WRITINGS
 
 import Link from 'next/link';
-import { posts } from '../../data/writings'
+import { posts } from './posts'
 
 export default function WritingsPage() {
     return (
         <div>
-            <ul>
+            <ol>
                 {
                     posts.map((post)=>(
-                        <li key={post.slug}><b>
-                            <Link href={ `/writing/${post.slug}`}>{post.title}</Link>
-                            </b>
+                        <li key={post.slug}>
+                            <h1 className='mb-2'>
+                                <Link href={ `/writing/${post.slug}`}>{post.title}</Link>
+                            </h1>
                         </li>
                     ))
                 }
-            </ul>
+            </ol>
         </div>
     )
 }

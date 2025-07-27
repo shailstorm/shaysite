@@ -2,13 +2,8 @@
 import './globals.css'
 import Link from "next/link";
 import Nav from "./nav";
-import {Karla} from "next/font/google";
+import { karla, lora } from '@/fonts';
 import Footer from './footer';
-
-const karla = Karla({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-});
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             
             <header className="sticky top-0 border-b-violet-300 border-dashed border-b-1">
               <div className='flex justify-between items-center mt-6 mb-1'>
-                <Link href={"/"} className={karla.className + " text-indigo-400"}>Shaylee Xie</Link>
+                <Link href={"/"} className={lora.className + " text-[#6f74ff] font-semibold text-[16px]"}><i>Shaylee Xie</i></Link>
                 <Nav className={karla.className}/>
               </div>
             </header>

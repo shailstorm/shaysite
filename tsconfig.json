@@ -34,7 +34,7 @@
     "next-env.d.ts",
     "node_modules/.next/types/**/*.ts",
     ".next/types/**/*.ts"
-  ],
+, "src/data/writings/climbing.mdx"  ],
   "exclude": [
     "node_modules"
   ]

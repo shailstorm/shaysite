@@ -14,7 +14,7 @@ export default function Nav({className = ""}: {className?: string}) {
   ];
 
   return (
-    <nav className={`flex flex-row space-x-3 ${className}`}>
+    <nav className={`flex flex-row space-x-3 text-[14px] ${className}`}>
       {links.map(({ label, href }) => {
         const isActive = ( pathname === href || pathname.startsWith(href + "/") );
         return (
@@ -22,7 +22,7 @@ export default function Nav({className = ""}: {className?: string}) {
             key={href}
             href={href}
             className={`transition ${
-              isActive ? "text-violet-300" : "text-gray-300"
+              isActive ? "text-[#998CF6]" : "text-[#9ca2ad]"
             }`}
           >
             {label}

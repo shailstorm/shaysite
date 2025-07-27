@@ -8,9 +8,11 @@ function preload() {
 }
 
 function setup() {
-  // runs once when sketch.js is executed
-  createCanvas(600, 430);
-  // inputText = createInput('drops');
+  createCanvas(min(windowWidth, 800), min(windowHeight, 600) );
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function updateTextPoints(message) {
