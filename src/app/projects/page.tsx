@@ -8,17 +8,16 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="" rel="noopener">Sudoku Solver</a> [In progress]
+                            <a href="https://github.com/shailstorm/sudoku" target="_blank" rel="noopener">Sudoku</a><span className="text-[#BEBDC9]">&#8599;</span> [in progress]
                         </h1>
                     </span>
                     <div className="flex flex-row">
                         <div className="w-45 sm:w-60">
-                            <p>Currently building out UI.</p>
+                            <p>SAT solver logic operational, currently building out UI.</p>
                         </div>
                         <div className="grow"></div>
                         <div className="w-30 sm:w-50">
                             <p>• Python</p>
-                            <p>• React</p>
                         </div>
                     </div>
                 </div>
@@ -52,7 +51,7 @@ export default function ProjectsPage() {
                     </span>
                     <div className="flex flex-row">
                         <div className="w-45 sm:w-60">
-                            <p className="">This website!</p>
+                            <p className="">This (mobile-first) website!</p>
                         </div>
                         <div className="grow"></div>
                         <div className="w-30 sm:w-50">

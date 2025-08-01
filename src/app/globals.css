@@ -20,6 +20,10 @@
     @apply text-gray-500 text-[14px] font-semibold;
   }
 
+  h2 {
+    @apply text-gray-400 text-[14px] font-light;
+  }
+
   article a[href^="/"],
   article a[href*="shayleexie.com"] {
     @apply underline decoration-gray-300 hover:decoration-gray-400;
@@ -33,7 +37,35 @@
     @apply text-gray-400 text-[14px] mb-4;
   }
 
+  ul {
+    @apply list-disc list-outside ml-2 text-[#747b87] text-[14px] leading-relaxed;
+    padding-left: 1rem;
+  }
 
+  li {
+    @apply pl-1;
+  }
+
+  ul li::marker {
+    @apply text-[#bec2c8];
+  }
+
+}
+
+.design-project {
+  @apply font-[karla] text-[14px] text-gray-500;
+
+  h1 {
+    @apply text-xl font-bold font-[inter] mt-2 mb-1;
+  }
+
+  b {
+    @apply text-gray-600;
+  }
+  
+  .large-text {
+    @apply text-4xl font-bold;
+  }
 
 }
 

@@ -17,13 +17,18 @@ export default async function ArtPage() {
     const fileContents = await fs.readFile(dataFilePath, "utf-8");
     const pieces: ArtPiece[] = JSON.parse(fileContents);
 
+    const displayPieces = pieces
+        .filter(piece => piece.display)
+        .sort((a: ArtPiece, b: ArtPiece) => parseInt(b.date.split(" ")[2]) - parseInt(a.date.split(" ")[2]));
+
+    const odds = displayPieces.filter((_, i) => i % 2 === 0);
+    const evens = displayPieces.filter((_, i) => i % 2 === 1);
+    const reorderedPieces = [...odds, ...evens];
+
     return (
         <div className="flex justify-center">
             <div className="columns-1 sm:columns-2 gap-6 max-w-4xl space-y-2">
-
-                { pieces
-                    .filter(piece => piece.display)
-                    .sort((a: ArtPiece, b: ArtPiece) => parseInt(b.date.split(" ")[2]) - parseInt(a.date.split(" ")[2]))
+                { reorderedPieces
                     .map((piece, index) => ( 
                         <article key={index} className="break-inside-avoid pb-3">
                             <Image

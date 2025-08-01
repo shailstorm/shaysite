@@ -1,4 +1,35 @@
 [
+    {
+        "title": "game assets",
+        "imagePath": "/art/game_assets.png",
+        "date": "june 20, 2025",
+        "description": "",
+        "display": true
+    },
+    
+    {
+        "title": "apple party",
+        "imagePath": "/art/apple_party.png",
+        "date": "june 1, 2025",
+        "description": "",
+        "display": true
+    },
+
+    {
+        "title": "apple dormant",
+        "imagePath": "/art/apple_dormant.png",
+        "date": "june 1, 2025",
+        "description": "",
+        "display": true
+    },
+
+    {
+        "title": "crawling",
+        "imagePath": "/art/crawling.jpeg",
+        "date": "april 8, 2025",
+        "description": "",
+        "display": true
+    }, 
 
     {
         "title": "doodles of women",
@@ -12,6 +43,14 @@
         "title": "heads",
         "imagePath": "/art/heads.jpeg",
         "date": "feb 19, 2025",
+        "description": "",
+        "display": false
+    }, 
+
+    {
+        "title": "girl",
+        "imagePath": "/art/girl.png",
+        "date": "feb 20, 2025",
         "description": "",
         "display": true
     }, 
@@ -53,6 +92,14 @@
         "title": "sitting woman",
         "imagePath": "/art/sitting_woman.jpeg",
         "date": "feb 26, 2018",
+        "description": "",
+        "display": true
+    },
+
+    {
+        "title": "heart",
+        "imagePath": "/art/heart.jpeg",
+        "date": "2017",
         "description": "",
         "display": true
     }

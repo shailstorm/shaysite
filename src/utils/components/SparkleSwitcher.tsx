@@ -20,9 +20,10 @@ export default function SparkleSwitcher() {
 
       <button
         onClick={() => setEnabled((prev) => !prev)}
-        className={`self-end mb-8 text-xs text-violet-300 hover:text-[#ff96f6] transition italic ${lora.className}`}
+        className={`self-end mb-8 text-xs text-violet-300 hover:text-[#ff96f6] transition ${ !enabled? lora.className : ''}` }
+        style={{ fontStyle: !enabled ? 'italic' : 'normal' }}
       >
-        <i>{enabled ? "hide magic" : "get magical"}</i>
+      {enabled ? "hide magic" : "get magical"}
       </button>
     </>
   );
