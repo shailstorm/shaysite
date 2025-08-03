@@ -56,7 +56,7 @@
   @apply font-[karla] text-[14px] text-gray-500;
 
   h1 {
-    @apply text-xl font-bold font-[inter] mt-2 mb-1;
+    @apply text-xl font-bold font-[inter] mt-2 mb-1 text-gray-600;
   }
 
   b {
@@ -66,7 +66,6 @@
   .large-text {
     @apply text-4xl font-bold;
   }
-
 }
 
 :root {

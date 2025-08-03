@@ -51,7 +51,7 @@ export default function ProjectsPage() {
                     </span>
                     <div className="flex flex-row">
                         <div className="w-45 sm:w-60">
-                            <p className="">This (mobile-first) website!</p>
+                            <p className="">This ~mobile-first~ website!</p>
                         </div>
                         <div className="grow"></div>
                         <div className="w-30 sm:w-50">
@@ -113,7 +113,7 @@ export default function ProjectsPage() {
                     </span>
                     <div className="flex flex-row">
                         <div className="w-45 sm:w-60">
-                            <p className="">Minesweeper game with option to play on a 3, 4, ... , n dimensional board.</p>
+                            <p className="">Minesweeper game with option to play on a 2, 3, 4, ... , or n dimensional board.</p>
                         </div>
                         <div className="grow"></div>
                         <div className="w-30 sm:w-50">
