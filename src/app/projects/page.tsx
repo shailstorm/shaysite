@@ -8,15 +8,15 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="https://github.com/shailstorm/sudoku" target="_blank" rel="noopener">Sudoku</a><span className="text-[#BEBDC9]">&#8599;</span> [in progress]
+                            <a href="https://github.com/shailstorm/sudoku" target="_blank" rel="noopener">Sudoku</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
-                            <p>SAT solver logic operational, currently building out UI.</p>
+                    <div className="project-description">
+                        <div className="description">
+                            <p>(In progress) SAT solver logic operational, currently building out UI.</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• Python</p>
                         </div>
                     </div>
@@ -27,15 +27,15 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="https://github.com/shailstorm/scheme-interpreter" target="_blank" rel="noopener">Lisp Interpreter</a><span className="text-[#BEBDC9]">&#8599;</span>
+                            <a href="https://github.com/shailstorm/scheme-interpreter" target="_blank" rel="noopener">Lisp Interpreter</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
+                    <div className="project-description">
+                        <div className="description">
                             <p className="">Turing complete Python REPL interpreter for Scheme.</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• Python</p>
                         </div>
                     </div>
@@ -46,15 +46,15 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="https://github.com/shailstorm/shaysite" target="_blank" rel="noopener">Shaysite</a><span className="text-[#BEBDC9]">&#8599;</span>
+                            <a href="https://github.com/shailstorm/shaysite" target="_blank" rel="noopener">Shaysite</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
+                    <div className="project-description">
+                        <div className="description">
                             <p className="">This ~mobile-first~ website!</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• Next.js</p>
                             <p>• Typescript</p>
                             <p>• CSS/HTML</p>
@@ -71,12 +71,12 @@ export default function ProjectsPage() {
                             <Link href="projects/stars-circles-font">Dynamic Font</Link>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
+                    <div className="project-description">
+                        <div className="description">
                             <p className="">Interactive font.</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• p5.js</p>
                         </div>
                     </div>
@@ -90,14 +90,14 @@ export default function ProjectsPage() {
                             <Link href="projects/swipe/">Swipe</Link>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
+                    <div className="project-description">
+                        <div className="description">
                             <p className="">Mid-fi mockup for a React Native app I&apos;m building for The Recurse Center.</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• Figma</p>
-                            <p>• Adobe Illustrator</p>
+                            <p>• Adobe Photoshop </p>
                             <p>• Information Architecture</p>
                         </div>
                     </div>
@@ -108,15 +108,15 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="https://github.com/shailstorm/minesweeper" target="_blank" rel="noopener">n-d Minesweeper</a><span className="text-[#BEBDC9]">&#8599;</span>
+                            <a href="https://github.com/shailstorm/minesweeper" target="_blank" rel="noopener">n-d Minesweeper</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
                         </h1>
                     </span>
-                    <div className="flex flex-row">
-                        <div className="w-45 sm:w-60">
+                    <div className="project-description">
+                        <div className="description">
                             <p className="">Minesweeper game with option to play on a 2, 3, 4, ... , or n dimensional board.</p>
                         </div>
                         <div className="grow"></div>
-                        <div className="w-30 sm:w-50">
+                        <div className="tools">
                             <p>• Python</p>
                             <p>• CSS/HTML</p>
                         </div>

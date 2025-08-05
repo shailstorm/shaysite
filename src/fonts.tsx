@@ -15,7 +15,7 @@ export const inter = Inter({
   subsets: ['latin']
 })
 
-export const libertinus = Geist({
-  weight: ['400'],
+export const geist = Geist({
+  weight: ['400', '700'],
   subsets: ['latin']
 })

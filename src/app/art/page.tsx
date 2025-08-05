@@ -37,8 +37,8 @@ export default async function ArtPage() {
                                 style={{ maxWidth: "100%", height: "auto" }}
                                 width={300}
                                 height={300} />
-                            <span className="flex justify-center text-gray-500"><p>{piece.date.split(" ").pop()}</p></span>
-                            <p>{piece.description}</p>
+                            <time className="flex justify-center text-gray-500"><p>{piece.date.split(" ").pop()}</p></time>
+                            {/* <p>{piece.description}</p> */}
                         </article>
                     ))
                 }

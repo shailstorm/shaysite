@@ -11,7 +11,7 @@ export default function WritingsPage() {
                 {
                     posts.map((post)=>(
                         <li key={post.slug}>
-                            <h1 className='mb-2'>
+                            <h1 className='mb-2 hover:underline hover:decoration-gray-400 underline-offset-2'>
                                 <Link href={ `/writing/${post.slug}`}>{post.title}</Link>
                             </h1>
                         </li>

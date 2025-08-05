@@ -1,10 +1,10 @@
 // LANDING PAGE "/"
 import Link from "next/link";
-import { lora } from '@/fonts';
+import { lora, karla } from '@/fonts';
 
 export default function Home() {
   return (
-    <div>
+    <div className={karla.className + ""}>
 
         <p className="mb-4">
           Hi, I&apos;m Shay! I studied CS at{" "}

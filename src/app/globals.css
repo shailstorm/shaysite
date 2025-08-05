@@ -1,44 +1,42 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
   a {
     text-decoration-skip-ink: auto;
-    @apply decoration-gray-300 hover:decoration-gray-400 underline underline-offset-2;
+    @apply underline sm:no-underline sm:hover:underline decoration-gray-300 underline-offset-2;
   }
-
   a[href^="/"],
   a[href*="shayleexie.com"] {
     text-decoration: none;
-    @apply no-underline decoration-transparent hover:decoration-transparent;
+    @apply hover:no-underline;
   }
-
-  p {
-    @apply  text-[#747b87] text-[14px] leading-relaxed;
-  }
-
-  h1 {
-    @apply text-gray-500 text-[14px] font-semibold;
-  }
-
-  h2 {
-    @apply text-gray-400 text-[14px] font-light;
-  }
-
   article a[href^="/"],
   article a[href*="shayleexie.com"] {
     @apply underline decoration-gray-300 hover:decoration-gray-400;
   }
 
-  article h1 {
-    @apply text-gray-500 text-[14px] font-bold mb-2;
+  h1 {
+    @apply text-gray-700 text-[14px] font-semibold;
+    font-family: 'SF Pro', sans-serif;
+  }
+  
+  h2 {
+    @apply text-gray-600 text-[14px] font-[geist] font-medium mt-2 mb-2;
+    font-family: 'SF Pro', sans-serif;
   }
 
-  article h2 {
-    @apply text-gray-400 text-[14px] mb-4;
+  p {
+    @apply  text-gray-500 text-[14px] leading-relaxed font-[karla];
+  }
+
+
+  time {
+    @apply text-gray-400;
+    font-family: 'SF Pro', sans-serif;
   }
 
   ul {
-    @apply list-disc list-outside ml-2 text-[#747b87] text-[14px] leading-relaxed;
+    @apply list-disc list-outside ml-2 text-gray-500 text-[14px] leading-relaxed;
     padding-left: 1rem;
   }
 
@@ -49,24 +47,51 @@
   ul li::marker {
     @apply text-[#bec2c8];
   }
+}
+
+.project-description {
+  @apply flex flex-row font-[karla];
+
+  .description {
+    @apply w-45 sm:w-60;
+    
+    p {
+      @apply text-gray-400;
+    }
+  }
+
+  .tools {
+    @apply w-30 sm:w-50;
+
+    p {
+      @apply text-gray-400;
+    }
+  }
 
 }
 
+
 .design-project {
-  @apply font-[karla] text-[14px] text-gray-500;
 
-  h1 {
-    @apply text-xl font-bold font-[inter] mt-2 mb-1 text-gray-600;
-  }
-
-  b {
-    @apply text-gray-600;
-  }
-  
   .large-text {
     @apply text-4xl font-bold;
   }
+
+  .caption {
+    @apply text-gray-400 font-light;
+  }
+
+  table {
+    @apply font-light;
+    th {
+      @apply text-gray-500 font-semibold;
+      /* font-family: 'SF Pro', sans-serif; */
+    }
+  }
+
 }
+
+
 
 :root {
   --background: #ffffff;
@@ -81,6 +106,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -96,11 +126,7 @@
   }
 } */
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 @keyframes fall {
   0% {
