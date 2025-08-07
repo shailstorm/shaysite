@@ -184,19 +184,21 @@ export default function SwipeMockupPage() {
             </div>
 
             <div className="mb-10">
-                <div className="flex flex-row items-center w-full justify-center mt-5">
+                <div className="flex flex-col sm:flex-row items-center w-full justify-center mt-5">
                     <div className="flex flex-row justify-center space-x-4 sm:space-x-8">
                         <video 
                             autoPlay
                             loop
                             playsInline
+                            webkit-playsinline="true"
                             className="pointer-events-none max-w-50">
+                            style="background: transparent;"
                             <source src="/swipe-mockup/select_project.webm" type="video/webm"/>
                             <source src="/swipe-mockup/select_project.webm" type="video/quicktime"/>
                         </video>
                     </div>
 
-                    <p className="content-center p-10">
+                    <p className="text-center p-10">
                         The <b>All Projects tab</b> allows users to find specific projects using search and filters.
                         From here, click on any project to view details and save the card.
                     </p>
@@ -204,7 +206,7 @@ export default function SwipeMockupPage() {
             </div>
 
 
-            <div className="mb-10">
+            <div className="mb-20">
                 <div className="flex items-center mb-4">
                     <div className="flex-grow border-t border-gray-200"></div>
                     <h2 className="pl-2 pr-2 font-semibold">Share Projects</h2>
@@ -215,15 +217,17 @@ export default function SwipeMockupPage() {
                     The <b>Profile tab</b> is where users upload, delete, and edit their own projects.
                 </p>
 
-                <div className="flex flex-row items-center w-full">
-                    <div className="flex flex-col w-1/2">
+                <div className="flex flex-col sm:flex-row items-center w-full">
+                    <div className="flex flex-col w-full md:w-1/2">
                     
-                            <div className="self-start mb-20">
+                            <div className="self-center sm:self-start mb-20">
                                 <video 
                                 autoPlay
                                 loop
                                 playsInline
+                                webkit-playsinline="true"
                                 className="pointer-events-none max-w-50">
+                                style="background: transparent;"
                                     <source src="/swipe-mockup/create_project.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/create_project.webm" type="video/quicktime"/>
                                 </video>
@@ -232,12 +236,14 @@ export default function SwipeMockupPage() {
                                 </h2> 
                             </div>
 
-                            <div className="self-start">
+                            <div className="self-center sm:self-start">
                                 <video 
                                     autoPlay
                                     loop
                                     playsInline
+                                    webkit-playsinline="true"
                                     className="pointer-events-none max-w-50">
+                                    style="background: transparent;"
                                     <source src="/swipe-mockup/deleteprojectflow.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/deleteprojectflow.webm" type="video/quicktime"/>
                                 </video>
@@ -248,7 +254,7 @@ export default function SwipeMockupPage() {
                     </div>
                     
 
-                    <div className="w-1/2 self-start">
+                    <div className="flex flex-col w-full sm:w-1/2 self-start">
                             <p className="mt-20 mb-20 text-center">
                                 When designing the Create card and Edit card views, I wanted to decrease friction
                                 as much as possible specifically for users who have enough information to create and edit projects. 
@@ -259,7 +265,9 @@ export default function SwipeMockupPage() {
                                     autoPlay
                                     loop
                                     playsInline
+                                    webkit-playsinline="true"
                                     className="pointer-events-none max-w-50">
+                                    style="background: transparent;"
                                     <source src="/swipe-mockup/editdraftflow.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/editdraftflow.webm" type="video/quicktime"/>
                                 </video>
@@ -284,19 +292,21 @@ export default function SwipeMockupPage() {
             </div>
 
             <div className="mb-10">
-                <div className="flex flex-row items-center w-full justify-center mt-5">
+                <div className="flex flex-col sm:flex-row items-center w-full justify-center mt-5">
                     <div className="flex flex-row justify-center space-x-4 sm:space-x-8">
                         <video 
                             autoPlay
                             loop
                             playsInline
+                            webkit-playsinline="true"
                             className="pointer-events-none max-w-50">
+                            style="background: transparent;"
                             <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/webm"/>
                             <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/quicktime"/>
                         </video>
                     </div>
 
-                    <p className="content-center p-10">
+                    <p className="text-center p-10">
                         The <b>Liked tab</b> stores cards saved by the user. Here, the user can manage their saved projects.
                     </p>
                 </div>

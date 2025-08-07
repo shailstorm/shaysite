@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 
 @layer base {
+  video {
+    background-color: transparent;
+    background: none;
+  }
+
+
   a {
     text-decoration-skip-ink: auto;
     @apply underline sm:no-underline sm:hover:underline decoration-gray-300 underline-offset-2;

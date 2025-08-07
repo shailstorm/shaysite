@@ -1,12 +1,23 @@
 // WRAPS EVERY ROUTE (global layout)
+
+"use client"
+
 import './globals.css'
 import Link from "next/link";
 import Nav from "./nav";
 import { karla, lora } from '@/fonts';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Footer from './footer';
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <html lang="en">
         <body className='flex flex-col justify-center items-center text-[10pt]'>

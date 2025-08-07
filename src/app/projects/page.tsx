@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export default function ProjectsPage() {
     return (
-            <div className="flex flex-col space-y-12">
+            <div className="flex flex-col space-y-11">
 
-                <h1 className="text-gray-400 font-light font-[karla]">Design
+                <h1 className="text-gray-500 font-light font-SF-pro">Design
                     <div className="w-full border-b-[0.99px] border-line border-b-gray-300 mt-1"></div>
                 </h1>
 
@@ -27,7 +27,6 @@ export default function ProjectsPage() {
                     </div>
                 </div>
 
-                
                 <div className="flex flex-col">
                     <span>
                         <h1>
@@ -50,7 +49,7 @@ export default function ProjectsPage() {
                 {/* <div className="w-full border-b-1 border-dotted border-b-gray-300"></div> */}
                 
 
-                <h1 className="text-gray-400 mt-14 font-light font-[karla]">Code
+                <h1 className="text-gray-500 mt-14 font-light font-sf-pro">Code
                     <div className="w-full border-b-[0.99px] border-line border-b-gray-300 mt-1"></div>
                 </h1>
                 
