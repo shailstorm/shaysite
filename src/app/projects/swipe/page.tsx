@@ -191,8 +191,9 @@ export default function SwipeMockupPage() {
                             loop
                             playsInline
                             webkit-playsinline="true"
-                            className="pointer-events-none max-w-50">
-                            style="background: transparent;"
+                            className="pointer-events-none max-w-50"
+                            style={{ backgroundColor: "transparent", background: "none" }}
+                            >
                             <source src="/swipe-mockup/select_project.webm" type="video/webm"/>
                             <source src="/swipe-mockup/select_project.webm" type="video/quicktime"/>
                         </video>
@@ -226,8 +227,9 @@ export default function SwipeMockupPage() {
                                 loop
                                 playsInline
                                 webkit-playsinline="true"
-                                className="pointer-events-none max-w-50">
-                                style="background: transparent;"
+                                className="pointer-events-none max-w-50"
+                                style={{ backgroundColor: "transparent", background: "none" }}
+                                >
                                     <source src="/swipe-mockup/create_project.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/create_project.webm" type="video/quicktime"/>
                                 </video>
@@ -242,8 +244,9 @@ export default function SwipeMockupPage() {
                                     loop
                                     playsInline
                                     webkit-playsinline="true"
-                                    className="pointer-events-none max-w-50">
-                                    style="background: transparent;"
+                                    className="pointer-events-none max-w-50"
+                                    style={{ backgroundColor: "transparent", background: "none" }}
+                                    >
                                     <source src="/swipe-mockup/deleteprojectflow.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/deleteprojectflow.webm" type="video/quicktime"/>
                                 </video>
@@ -266,8 +269,9 @@ export default function SwipeMockupPage() {
                                     loop
                                     playsInline
                                     webkit-playsinline="true"
-                                    className="pointer-events-none max-w-50">
-                                    style="background: transparent;"
+                                    className="pointer-events-none max-w-50"
+                                    style={{ backgroundColor: "transparent", background: "none" }}
+                                    >
                                     <source src="/swipe-mockup/editdraftflow.webm" type="video/webm"/>
                                     <source src="/swipe-mockup/editdraftflow.webm" type="video/quicktime"/>
                                 </video>
@@ -299,8 +303,9 @@ export default function SwipeMockupPage() {
                             loop
                             playsInline
                             webkit-playsinline="true"
-                            className="pointer-events-none max-w-50">
-                            style="background: transparent;"
+                            className="pointer-events-none max-w-50"
+                            style={{ backgroundColor: "transparent", background: "none" }}
+                            >
                             <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/webm"/>
                             <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/quicktime"/>
                         </video>
