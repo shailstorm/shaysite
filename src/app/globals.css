@@ -5,18 +5,20 @@
     text-decoration-skip-ink: auto;
     @apply underline sm:no-underline sm:hover:underline decoration-gray-300 underline-offset-2;
   }
+
   a[href^="/"],
   a[href*="shayleexie.com"] {
     text-decoration: none;
     @apply hover:no-underline;
   }
-  article a[href^="/"],
-  article a[href*="shayleexie.com"] {
+  
+  article a {
     @apply underline decoration-gray-300 hover:decoration-gray-400;
   }
 
+
   h1 {
-    @apply text-gray-700 text-[14px] font-semibold;
+    @apply text-gray-600 text-[14px] font-semibold;
     font-family: 'SF Pro', sans-serif;
   }
   
