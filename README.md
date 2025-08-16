@@ -1,4 +1,4 @@
-hey! welcome to my site's guts. i wrote this using html, css tailwind, and react. it's hosted on vercel.
+hey! welcome to [my site's](https://www.shayleexie.com) guts. i wrote this using html, css tailwind, and react. it's hosted on vercel.
 
 <br />
 
