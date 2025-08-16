@@ -41,8 +41,8 @@ export default function ProjectsPage() {
                         <div className="tools">
                             <p>• Next.js</p>
                             <p>• Typescript</p>
-                            <p>• CSS/HTML</p>
-                            <p>• MDX</p>
+                            <p>• HTML</p>
+                            <p>• TailwindCSS</p>
                         </div>
                     </div>
                 </div>
@@ -56,16 +56,40 @@ export default function ProjectsPage() {
                 <div className="flex flex-col">
                     <span>
                         <h1>
-                            <a href="https://github.com/shailstorm/sudoku" target="_blank" rel="noopener">Sudoku</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
+                            <a href="https://github.com/shailstorm/sat-sudoku" target="_blank" rel="noopener">Sudoku</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
                         </h1>
                     </span>
                     <div className="project-description">
                         <div className="description">
-                            <p>(In progress) SAT solver logic operational, currently building out UI.</p>
+                            <p>Sudoku puzzle generator and solver. Uses boolean satisfiability recursive backtracking.</p>
                         </div>
                         <div className="grow"></div>
                         <div className="tools">
                             <p>• Python</p>
+                            <p>• HTML</p>
+                            <p>• TailwindCSS</p>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className="w-full border-b-1 border-dotted border-b-gray-300"></div> */}
+
+                <div className="flex flex-col">
+                    <span>
+                        <h1>
+                            <a href=" https://cysabi.github.io/arrhythmia/" target="_blank" rel="noopener">Arrhythmia</a><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
+                        </h1>
+                    </span>
+                    <div className="project-description">
+                        <div className="description">
+                            <p>PvP tilemap rhythm game. I built this with friends at The Recurse Center! Game engine is React.js. . .</p>
+                        </div>
+                        <div className="grow"></div>
+                        <div className="tools">
+                            <p>• React.js</p>
+                            <p>• Golang</p>
+                            <p>• TailwindCSS</p>
+                            <p>• Distributed Systems</p>
+                            <p>• Art Assets</p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +147,7 @@ export default function ProjectsPage() {
                         <div className="grow"></div>
                         <div className="tools">
                             <p>• Python</p>
-                            <p>• CSS/HTML</p>
+                            <p>• HTML/CSS</p>
                         </div>
                     </div>
                 </div>

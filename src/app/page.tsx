@@ -39,9 +39,14 @@ export default function Home() {
         <hr className="border-t-1 border-dotted border-t-violet-200 mt-8 mb-8" />
 
         <p className="mb-1">Recent Projects</p>
-        <h1>
-            <Link href="projects/swipe/">Swipe Design Mockup</Link>
-        </h1>
+        <div className="space-y-2 pt-2">
+          <h1>
+              <Link href="https://github.com/shailstorm/sat-sudoku" target="_blank" rel="noopener">Sudoku Cafe</Link><span className="text-[#BEBDC9] font-normal"> &#8599;</span>
+          </h1>
+          <h1>
+              <Link href="projects/swipe/">Swipe Design Mockup</Link>
+          </h1>
+        </div>
 
     </div>
   );
