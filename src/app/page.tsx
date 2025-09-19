@@ -12,8 +12,12 @@ export default function Home() {
           <Link href="https://en.wikipedia.org/wiki/Wellesley_College" target="_blank" rel="noopener" className="text-[#A396FD] text-decoration-line: underline decoration-[#d7d0ff]  hover:decoration-[#a79aff]">
           Wellesley College</Link> and MIT, where I also did research in Navigational Affordance and <Link href="https://aclanthology.org/2025.acl-long.1471/" target="_blank" rel="noopener" className="text-[#A396FD] text-decoration-line: underline decoration-[#d7d0ff]  hover:decoration-[#a79aff]">Prosody Prediction by LLMs</Link>. 
           My favorite classes were <Link href="https://web.mit.edu/6.102/www/sp25/" target="_blank" rel="noopener" className="text-[#A396FD] text-decoration-line: underline decoration-[#d7d0ff]  hover:decoration-[#a79aff]">
-          Software Construction</Link>, Organic Chemistry, and Automata Theory (which I TA&apos;ed for). <br />
+          Software Construction</Link>, Organic Chemistry, and Automata Theory (which I TA&apos;ed for). A couple months ago I started designing for my friends' apps and websites. I fell in love with how design boils down to creating and sharing beautiful experiences. <br />
         </p>
+
+        <p className="mb-4">
+        </p>
+
 
         <p className="mb-4">
           I&apos;m currently in Brooklyn, NY finishing up a batch at{" "}
@@ -26,6 +30,7 @@ export default function Home() {
         </p>
 
         <hr className="border-t-1 border-dotted border-t-violet-200 mt-8 mb-8" />
+
 
         <p className="mb-4">
           I love design, sculpting, and making pixel art. <br />

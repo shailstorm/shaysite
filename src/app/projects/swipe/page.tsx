@@ -195,7 +195,6 @@ export default function SwipeMockupPage() {
                             style={{ backgroundColor: "transparent", background: "none" }}
                             >
                             <source src="/swipe-mockup/select_project.webm" type="video/webm"/>
-                            <source src="/swipe-mockup/select_project.webm" type="video/quicktime"/>
                         </video>
                     </div>
 
@@ -231,7 +230,6 @@ export default function SwipeMockupPage() {
                                 style={{ backgroundColor: "transparent", background: "none" }}
                                 >
                                     <source src="/swipe-mockup/create_project.webm" type="video/webm"/>
-                                    <source src="/swipe-mockup/create_project.webm" type="video/quicktime"/>
                                 </video>
                                 <h2 className="content-center text-center !text-gray-400 mt-2">
                                     Create card
@@ -248,7 +246,6 @@ export default function SwipeMockupPage() {
                                     style={{ backgroundColor: "transparent", background: "none" }}
                                     >
                                     <source src="/swipe-mockup/deleteprojectflow.webm" type="video/webm"/>
-                                    <source src="/swipe-mockup/deleteprojectflow.webm" type="video/quicktime"/>
                                 </video>
                                 <h1 className="content-center text-center !text-gray-400 mt-2">
                                     Delete card
@@ -273,7 +270,6 @@ export default function SwipeMockupPage() {
                                     style={{ backgroundColor: "transparent", background: "none" }}
                                     >
                                     <source src="/swipe-mockup/editdraftflow.webm" type="video/webm"/>
-                                    <source src="/swipe-mockup/editdraftflow.webm" type="video/quicktime"/>
                                 </video>
                                 <h1 className="content-center text-center !text-gray-400 mt-2">
                                     Edit card
@@ -307,7 +303,6 @@ export default function SwipeMockupPage() {
                             style={{ backgroundColor: "transparent", background: "none" }}
                             >
                             <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/webm"/>
-                            <source src="/swipe-mockup/unlikeprojectflow.webm" type="video/quicktime"/>
                         </video>
                     </div>
 

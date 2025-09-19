@@ -1,10 +1,10 @@
-// '/writings'
-// INDEX PAGE FOR ALL WRITINGS
+// '/blog'
+// INDEX PAGE FOR ALL BLOGS
 
 import Link from 'next/link';
 import { posts } from './posts'
 
-export default function WritingsPage() {
+export default function BlogPage() {
     return (
         <div>
             <ol>
@@ -12,7 +12,7 @@ export default function WritingsPage() {
                     posts.map((post)=>(
                         <li key={post.slug}>
                             <h1 className='mb-2 hover:underline hover:decoration-gray-400 underline-offset-2'>
-                                <Link href={ `/writing/${post.slug}`}>{post.title}</Link>
+                                <Link href={ `/blog/${post.slug}`}>{post.title}</Link>
                             </h1>
                         </li>
                     ))

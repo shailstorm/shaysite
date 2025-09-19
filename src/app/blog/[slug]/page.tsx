@@ -1,5 +1,5 @@
-// '/writings/[slug]'
-// DYNAMIC ROUTE FOR EACH BLOG POST "/writing-post-title-here"
+// '/blog/[slug]'
+// DYNAMIC ROUTE FOR EACH BLOG POST "/blog-post-title-here"
 
 
 import fs from 'fs/promises';
@@ -8,14 +8,14 @@ import { posts } from '../posts'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 
 
-interface WritingsProps {
+interface BlogProps {
     params: Promise<{ slug: string; }>;
 }
 
-export default async function WritingsPostPage( { params }: WritingsProps ) {
+export default async function BlogPostPage( { params }: BlogProps ) {
 
     const { slug } = await params;
-    const filePath = path.join(process.cwd(), 'src', 'data', 'writings', `${slug}.mdx`);
+    const filePath = path.join(process.cwd(), 'src', 'data', 'blogposts', `${slug}.mdx`);
 
     const post = posts.find((p) => p.slug === slug);
     const title = post ? post.title : "unknown post";

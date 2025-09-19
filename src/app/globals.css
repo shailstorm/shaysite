@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+@layer utilities {
+  .mask-vertical-fade {
+    -webkit-mask: linear-gradient(to bottom, black 0%, black 30%, transparent 100%);
+    mask: linear-gradient(to bottom, black 0%, black 30%, transparent 100%);
+  }
+}
+
 @layer base {
   video {
     background-color: transparent;
@@ -57,8 +64,25 @@
   }
 }
 
+.project {
+  @apply flex flex-col gap-[4px];
+}
+
+
+.project-heading {
+  @apply flex justify-between;
+
+  .project-title {
+    @apply w-45 sm:w-60;
+  }
+
+  .project-tag {
+    @apply flex justify-start w-30 sm:w-50 text-gray-500 pt-[16px];
+  }
+}
+
 .project-description {
-  @apply flex flex-row font-[karla];
+  @apply flex font-[karla] items-start;
 
   .description {
     @apply w-45 sm:w-60;
@@ -75,8 +99,24 @@
       @apply text-gray-400;
     }
   }
-
 }
+
+.project-thumbnail {
+  @apply flex justify-center items-center rounded-[12px] border-1 border-gray-200 bg-gray-50 overflow-clip my-4;
+}
+
+.project-thumbnail.image{
+  @apply hover:bg-gray-100 transition-colors duration-150 cursor-pointer;
+}
+
+.project-thumbnail.video {
+  @apply
+    relative before:absolute before:inset-0 before:bg-transparent
+    hover:before:bg-gray-200/10 before:transition-colors before:duration-150
+    hover:border-gray-300 transition-colors;
+}
+
+
 
 
 .design-project {
@@ -99,7 +139,9 @@
 
 }
 
-
+html {
+  scrollbar-gutter: stable;
+}
 
 :root {
   --background: #ffffff;

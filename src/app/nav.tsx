@@ -7,10 +7,10 @@ export default function Nav({className = ""}: {className?: string}) {
   const pathname = usePathname();
 
   const links = [
-    { label: "About", href: "/" },
     { label: "Projects", href: "/projects" },
     { label: "Art", href: "/art" },
-    { label: "Writing", href: "/writing" },
+    { label: "Blog", href: "/blog" },
+    { label: "About", href: "/" },
   ];
 
   return (
